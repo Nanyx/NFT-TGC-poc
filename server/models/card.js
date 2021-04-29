@@ -17,31 +17,28 @@ class Set {
     for(let i = 0; i < 80; i++){
       let id = `c-${i}`;
       this.common.push(this.generateCard(id));
-      console.log(`card: ${id} generated`);
     }
-    //uncommon : 40 cards
+    //uncommon : 40 cards | we add them to the common loot table (I know i'm cheap)
     for(let i = 0; i < 40; i++){
       let id = `u-${i}`;
       this.common.push(this.generateCard(id));
-      console.log(`card: ${id} generated`);
     }
     //rare : 20 cards
     for(let i = 0; i< 20; i++){
       let id = `r-${i}`;
       this.rare.push(this.generateCard(id));
-      console.log(`card: ${id} generated`);
     }
     //mythic : 10 cards | we add them to the rare loot table
     for(let i = 0; i< 10; i++){
       let id = `m-${i}`;
       this.rare.push(this.generateCard(id));
-      console.log(`card: ${id} generated`);
     }
   }
 
   generateCard(id){
     let card = new bc();
     card.addBlock({owner:"Booster", pastOwner:"Creator"}, id);
+    console.log(`card: ${id} generated`);
     return card;
   }
 }
