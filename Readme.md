@@ -2,7 +2,7 @@
 A simple proof of concept that _Trading Card Game_ can use _Non-Fungible-Token_ to validate the authenticity, eligibility and uniqueness of a digital asset. Therefore giving it a rarity and value.
 
 ## How to Use
-Aside of grabing the master branch and having [NodeJS](https://nodejs.dev/) installed use `npm i` on each project to download the library needed to make the stuff work.
+Aside of grabing the master branch and having [NodeJS](https://nodejs.dev/) installed, use `npm i` on each project to download the library needed to make the stuff work.
 
 After that you'll want to generate a set of cards. To do that, go to the server project and use `npm run generate` to create your set of card (Each card will have there own Blockchain making them unique for this particular _Set_). Technicaly, wee should save the block chain to a public readable database but for the __POC__ object file will suffice.
 
