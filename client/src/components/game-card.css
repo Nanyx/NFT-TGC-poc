@@ -1,0 +1,9 @@
+.card-header.unco {
+  background-color: silver;
+}
+.card-header.rare {
+  background-color: gold;
+}
+.card-header.myth {
+  background-color: #FF7A0E;
+}
